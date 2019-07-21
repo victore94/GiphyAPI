@@ -18,8 +18,17 @@ function getGif(chosen) {
 
 $('#select-gif').on('click', function (e) {
     e.preventDefault();
-    var state = $('#select-gif').attr("#gif-input");
-    console.log(state)
+
     var inputGif = $('#gif-input').val().trim();
     getGif(inputGif)
 })
+
+
+
+$('.button').on('click', function(e){
+  var myGif = $(this).attr('my-gif')
+  console.log(myGif)
+getGif(myGif)
+})
+
+
