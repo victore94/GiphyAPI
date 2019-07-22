@@ -8,8 +8,11 @@ function getGif(chosen) {
         method: "GET"
     }).then(function (response) {
         var results = response.data
+        $("#gif-div").empty();
+
         for (var i = 0; i < results.length; i++) {
             var picURL = results[i].images.downsized_medium.url
+
             $('#gif-div').append(`<img src=${picURL} + />`);
         }
     })
@@ -18,6 +21,7 @@ function getGif(chosen) {
 
 $('#select-gif').on('click', function (e) {
     e.preventDefault();
+    $("#gif-div").empty();
 
     var inputGif = $('#gif-input').val().trim();
     getGif(inputGif)
@@ -25,10 +29,10 @@ $('#select-gif').on('click', function (e) {
 
 
 
-$('.button').on('click', function(e){
-  var myGif = $(this).attr('my-gif')
-  console.log(myGif)
-getGif(myGif)
+$('.button').on('click', function (e) {
+    var myGif = $(this).attr('my-gif')
+    console.log(myGif)
+    getGif(myGif)
 })
 
 
