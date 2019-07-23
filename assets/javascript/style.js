@@ -15,6 +15,7 @@ function getGif(chosen) {
         for (var i = 0; i < results.length; i++) {
             // this gives me moving images
             var picURL = results[i].images.downsized_medium.url
+            console.log(picURL)
              $('.gif-div').append(`<img src=${picURL} + />`);
 
 
