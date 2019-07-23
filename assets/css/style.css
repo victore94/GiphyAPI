@@ -3,11 +3,31 @@ padding: 5px;
 max-width: 375px;
 }
 
-
-
-
-
 #gif-form{
     width: 350px;
 
+}
+
+#select-gif{
+    background-color: #E5EAEE;
+    box-shadow: 1px 1px;
+}
+#select-gif:hover{
+    background-color: #A8DBDE;
+    box-shadow: 1px 1px;
+}
+
+button{
+    background-color: #E5EAEE;
+    box-shadow: 1px 1px;
+}
+
+button:hover{
+    background-color: #A8DBDE;
+    box-shadow: 1px 1px;
+}
+
+.box{
+    padding: 5px;
+    background-color: #EDCECB;
 }
