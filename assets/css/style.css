@@ -1,12 +1,22 @@
+.box{
+    padding: 5px;
+    background-color: #EDCECB;
+    width: fit-content;
+    padding: 5px;
+    margin: auto;
+}
 img{
 padding: 5px;
 max-width: 375px;
+border-radius: 10px;
+margin: auto;
+
 }
 
 #gif-form{
-    width: 400px;
-
+padding: 2px;
 }
+
 
 #select-gif{
     background-color: #E5EAEE;
@@ -27,7 +37,13 @@ button:hover{
     box-shadow: 1px 1px;
 }
 
-.box{
-    padding: 5px;
-    background-color: #EDCECB;
+
+
+.gif-div{
+    margin: auto;
+    max-width: 900px;
+
 }
+
+
+
