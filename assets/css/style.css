@@ -1,6 +1,7 @@
 .box{
     background-color: #EDCECB;
     padding: 5px;
+    width: fit-content;
     margin: auto;
 }
 
@@ -38,7 +39,9 @@ button:hover{
 
 
 
+.box-1{
 
+}
 
 p {
     width: 100px;

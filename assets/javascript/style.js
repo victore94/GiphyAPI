@@ -11,10 +11,8 @@ function getGif(chosen) {
         $(".gif-div").empty();
 
         for (var i = 0; i < results.length; i++) {
-            // this gives me moving images
             var picURL = results[i].images.downsized_medium.url
             var rating1 = results[i].rating
-            // var rating = $("<p>").text("Rating: " + results[i].rating)
             var image = $('<img>')
             image.attr('src', picURL)
 
