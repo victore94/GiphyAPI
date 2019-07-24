@@ -1,14 +1,14 @@
-.box{
-    background-color: #EDCECB;
-    padding: 5px;
-    margin: auto;
-}
-
-img{
+ img{
 padding: 5px;
-max-width: 400px;
+/* max-width: 375px; */
 border-radius: 10px;
 
+}
+
+
+
+p{
+   max-width: 75px;
 }
 
 #gif-form{
@@ -28,7 +28,15 @@ padding: 2px;
 button{
     background-color: #E5EAEE;
     box-shadow: 1px 1px;
+    margin-bottom: 5px;
+    padding: 2px;
+    border-radius: 7px;
 }
+select-gif{
+border-radius: 7px;
+}
+
+
 
 button:hover{
     background-color: #A8DBDE;
@@ -37,9 +45,12 @@ button:hover{
 
 
 
+.gif-div{
+background-color: pink;
+margin: 10px;
+padding: 10px;
 
-
-
-p {
-    width: 100px;
 }
+
+
+

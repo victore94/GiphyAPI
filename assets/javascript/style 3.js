@@ -1,3 +1,4 @@
+$('img').css({ 'padding': '10px' })
 function getGif(chosen) {
     var queryURL = "https://api.giphy.com/v1/gifs/search?q=" + chosen + "&api_key=BkaUZZWcFij6J7AoQj3WtPb1R2p9O6V9&limit=10";
 
@@ -12,19 +13,19 @@ function getGif(chosen) {
 
         for (var i = 0; i < results.length; i++) {
             // this gives me moving images
+            var imgDiv = $('.gif-div')
             var picURL = results[i].images.downsized_medium.url
-            var rating1 = results[i].rating
-            // var rating = $("<p>").text("Rating: " + results[i].rating)
+            var rating = $("<p>").text("Rating: " + results[i].rating)
             var image = $('<img>')
             image.attr('src', picURL)
 
 
             // console.log(rating)
-            $('.gif-div').append(image)
-            $('.gif-div').append(rating1)
+            imgDiv.append(image)
+            imgDiv.append(rating)
 
 
-
+            $('.gif-div').append(imgDiv)
 
 
             // var testing = $('.gif-div').append(`<img src=${picURL} + />` + rating);
